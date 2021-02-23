@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JSON Search</title>
+	<script src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+<!--link rel="stylesheet" type="text/css" href="assets/css/restaurant.css"-->
+    <link rel="stylesheet" type="text/css" href="assets/css/cssstyles.css">
+</head>
+<body>
+	<center>
+
+		<div>
+			<h1>Enter State name or abbreviation</h1>
+			<br>
+			<hr>
+			<br>
+			<input type="text" id="search" size="50" placeholder="Search">
+		</div>
+
+		<ul class="list-group" id="match-list"> </ul>
+
+	</center>
+
+	<script type="text/javascript">
+		
+		var search=document.getElementById("search");
+		var matchList=document.getElementById("match-list");
+
+		var searchStates = async searchText => {
+
+			var res = await fetch("../ip_project/data.json")
+			var states = await res.json()
+
+			var matches = states.filter(data => {
+
+				var regex = new RegExp(`^${searchText}`, "gi")
+				return data.name.match(regex) || data.info.match(regex)
+			})
+
+			if(searchText.length == 0)
+			{
+				matches = []
+				matchList.innerHTML = ""
+			}
+
+			outputHtml(matches)
+
+		}
+
+		//show results below serch box
+		var outputHtml = matches => {
+
+			if (matches.length > 0)
+			{
+				var html = matches.map(match =>`
+
+						<ul>
+							<h4>${match.name} </h4>
+						</ul>
+
+					`).join("")
+
+				matchList.innerHTML = html
+			}
+
+		}
+
+		search.addEventListener("input", () => searchStates(search.value))
+
+	</script>
+
+</body>
+</html>

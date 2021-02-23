@@ -1,0 +1,63 @@
+[
+	{
+		"name": "Burger",
+		"image": "assets/images/food13.jpg",
+		"location": "juicy burgers"
+	},
+	{
+		"name": "Tomato Soup",
+		"image": "assets/images/food16.jpg",
+		"location": "Extra Healthy"
+	},
+	{
+		"name": "Momos",
+		"image": "assets/images/food19.jpg",
+		"location": "Fresh & Healthy"
+	},
+	{
+		"name": "French fries",
+		"image": "assets/images/food25.jpg",
+		"location": "Fried appetizers"
+	},
+	{
+		"name": "Hot chocolate",
+		"image": "assets/images/food14.jpg",
+		"location": "chocolaty"
+	},
+	{
+		"name": "Pizza",
+		"image": "assets/images/food17.jpg",
+		"location": "Lip smacking"
+	},
+	{
+		"name": "Caramel Custard",
+		"image": "assets/images/food20.jpg",
+		"location": "sweet confections"
+	},
+	{
+		"name": "Paneer Tikka",
+		"image": "assets/images/food26.jpg",
+		"location": "tasty starter"
+	},
+	{
+		"name": "Roti sabji",
+		"image": "assets/images/food15.jpg",
+		"location": "indian delicacy"
+	},
+	{
+		"name": "Starters",
+		"image": "assets/images/food18.jpg",
+		"location": "Baked tarts"
+	},
+	{
+		"name": "Waffles",
+		"image": "assets/images/food24.jpg",
+		"location": "Crunchy"
+	},	
+	{
+		"name": "Noodles",
+		"image": "assets/images/food27.jpg",
+		"location": "Delicious"
+	}
+	
+]

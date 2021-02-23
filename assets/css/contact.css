@@ -1,0 +1,111 @@
+
+.contact_heading{
+  text-align: center;
+  margin-top: 50px;
+  
+}
+#topic{
+  font-family: "Alegreya SC";
+  font-size: 25px;
+  color: navy;
+}
+#text1{
+  font-family: "Calligraffitti";
+  font-weight: bold;
+}
+
+input[type=text]{
+  
+  padding: 12px 20px;
+  margin: 5px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.infor{
+  font-family: "Lato";
+}
+
+textarea{
+  padding: 12px 20px;
+  margin: 5px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  height: 80px;
+
+}
+input[type=submit] {
+  width: 50%;
+  background-color: LightSeaGreen;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: steelblue;
+}
+
+.map{
+  width: 50%;
+  position: auto;
+  margin-right: 10px; 
+}
+/* card */
+
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 50%;
+  padding: 0 10px;
+}
+
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 20 20px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row img{
+  height: 300px;
+}
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+.row img{
+  height: 200px;
+  width: 100%;
+}
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+* {
+  box-sizing: border-box;
+}
+
+.contactus{
+  background-color: #ffffff;
+}

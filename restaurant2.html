@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Restuarant(page2)</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<script src='//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="restaurant.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/mystyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="assets/js/myscript.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Alegreya SC' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Calligraffitti' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Dancing Script' rel='stylesheet'>
+</head> 
+<body>
+
+    <div class="topnav sticky" id="topnav">
+        <a href="main.html" style="opacity: 1.0"><img src="assets/images/logo.png" width="140" height="55" alt=""></a>
+        <div style="padding-top: 20px;">
+            <a href="main(khyati).html">Home</a>
+            <a href="hotels.html">Hotels</a>
+            <a href="restaurant1.html">Restaurants </a>
+            <a href="Rooms.html"> Rooms </a>
+            <a href="contact.html">Contact</a>
+            <a href="#information">About</a>
+            <div style="float: right; padding-right: 20px;">
+              <input type="text" id="search" size="20" placeholder="Search" onkeyup="myFunction()">
+              <i class="fa fa-search"></i>
+            </div>
+            <ul style="float: right; padding-right: 20px;" class="list-group" id="match-list"> </ul>
+            <!--a href="login_page.html" style="text-align: right; float: right;">Login</a--><br>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+      </div>
+  <script type="text/javascript">   
+    var search=document.getElementById("search");
+    var matchList=document.getElementById("match-list");
+    var searchStates = async searchText => {
+      var res = await fetch("../ip_project/data1.json")
+      var states = await res.json()
+      var matches = states.filter(state => {
+        var regex = new RegExp(`^${searchText}`, "gi")
+        return state.name.match(regex)
+      })
+      if(searchText.length == 0)
+      {
+        matches = []
+        matchList.innerHTML = ""
+      }
+      outputHtml(matches)
+    }
+    //show results below serch box
+    var outputHtml = matches => {
+      if (matches.length > 0)
+      {
+        var html = matches.map(match =>`
+            <ul>
+              <h4>${match.name} (${match.location})  </h4>
+              
+            </ul>
+
+          `).join("")
+
+        matchList.innerHTML = html
+      }
+
+    }
+
+    search.addEventListener("input", () => searchStates(search.value))
+
+    function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("search");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+
+  </script>
+ 
+
+<!-- !PAGE CONTENT! -->
+ <ul id="myUL">
+<div class="row"> 
+
+  <div class="column">
+   
+      
+      <li><img src="assets/images/food13.jpg" style="width:100%">
+      <a> Burger</a></li>
+      <li><img src="assets/images/food14.jpg" style="width:100%">
+      <a>Hot Chocolate</a></li>
+      <li><img src="assets/images/food15.jpg" style="width:100%">
+      <a>Roti Sabji</a></li>
+  
+  </div>  
+
+  <div class="column">
+     
+    <li><img src="assets/images/food16.jpg" style="width:100%">
+    <a>Tomato soup</a></li>
+    <li><img src="assets/images/food17.jpg" style="width:100%">
+    <a>Pizza</a></li>
+    <li><img src="assets/images/food18.jpg" style="width:100%">
+    <a>Starters</a></li>
+  
+  </div>  
+  <div class="column">
+ 
+    <li><img src="assets/images/food19.jpg" style="width:100%">
+    <a>Momos</a></li>
+    <li><img src="assets/images/food20.jpg" style="width:100%">
+    <a>Caramel Custard</a></li>
+    <li><img src="assets/images/food24.jpg" style="width:100%">
+    <a>Waffles</a></li>
+   
+ 
+  </div>  
+    <div class="column">
+     
+    <li><img src="assets/images/food25.jpg" style="width:100%">
+    <a>French Fries</a></li>
+    <li><img src="assets/images/food26.jpg" style="width:100%">
+    <a>Paneer Tikka</a></li>
+    <li><img src="assets/images/food27.jpg" style="width:100%">
+    <a>Noddles</a></li>
+  
+  </div>
+  
+</div>
+</ul>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="restaurant1.html" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="restaurant1.html" class="w3-bar-item w3-button w3-hover-black">1</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>  
+</div>  
+<!-- End page content -->
+
+<!-- Footer -->
+<footer style="background-color: black; color: white;">
+  <div style="padding: 30px;"></div>
+  <center>
+  <i href ="https://www.facebook.com/"class="fa fa-facebook-official fa-2x"></i>
+  <i class="fa fa-ienstagram fa-2x"></i>
+  <i class="fa fa-snapchat fa-2x"></i>
+  <i class="fa fa-pinterest-p fa-2x"></i>
+  <i href ="#" class="fa fa-twitter fa-2x"></i>
+  <i href ="#" class="fa fa-linkedin fa-2x"></i><br>
+  <div style="padding: 10px;"></div>
+  <i class="fa fa-copyright" aria-hidden="true">Seascape Hotels Pvt Ltd.</i>
+  </center>
+</footer>
+<!-- FOTTER ENDS -->
+
+</body>
+</html>

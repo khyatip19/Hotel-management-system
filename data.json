@@ -1,0 +1,68 @@
+[
+	{
+		"name": "Strawberry Pancakes",
+		"image": "assets/images/food1.jpg",
+		"location": "juicy berries"
+	},
+	{
+		"name": "Blueberry Pancakes",
+		"image": "assets/images/food2.jpg",
+		"location": "Extra fluffy"
+	},
+	{
+		"name": "Fruits",
+		"image": "assets/images/food3.jpg",
+		"location": "Fresh & Healthy"
+	},
+	{
+		"name": "Spring roll",
+		"image": "assets/images/food4.jpg",
+		"location": "Rolled appetizers"
+	},
+	{
+		"name": "nachos",
+		"image": "assets/images/food5.jpg",
+		"location": "Tortilla chips"
+	},
+	{
+		"name": "Salad",
+		"image": "assets/images/food6.jpg",
+		"location": "Fresh & Healthy"
+	},
+	{
+		"name": "French Toast",
+		"image": "assets/images/food7.jpg",
+		"location": "Sliced breads"
+	},
+	{
+		"name": "Halwa",
+		"image": "assets/images/food8.jpg",
+		"location": "sweet confections"
+	},
+	{
+		"name": "pasta",
+		"image": "assets/images/food9.jpg",
+		"location": "Cheesy Pasta"
+	},
+	{
+		"name": "sandwich",
+		"image": "assets/images/food10.jpg",
+		"location": "Perfect sandwich"
+	},
+	{
+		"name": "rice",
+		"image": "assets/images/food11.jpg",
+		"location": "Rice"
+	},	
+	{
+		"name": "tacos and Nuggets",
+		"image": "assets/images/food12.jpg",
+		"location": "Delicious"
+	}
+	
+
+
+
+
+
+]

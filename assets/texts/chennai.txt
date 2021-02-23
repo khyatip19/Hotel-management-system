@@ -1,0 +1,6 @@
+     <h3>SEASCAPE HOTEL- CHENNAI</h3>
+      <center><img src="assets/images/chennai.jpg" style="width: 100%;"></center>
+<div style="padding:10px;"></div>
+Seascape resort,Chennai offers 4-star rooms with free Wi-Fi and satellite flat-screen TVs located one kilometer from Marina Beach. Offering free parking, it features a spa, fitness center and outdoor pool.
+Along with classic wood furnishings, our air-conditioned rooms feature neutral fabrics and a safe. For convenience, a minibar and free tea/coffee-making amenities are provided. Private bathrooms have hot/cold showers and a hairdryer.
+With trained professionals at hand, all-round workouts can be done at the well-equipped fitness center. Relaxing massages and body treatments await at the spa. A tour desk and business center are available.
